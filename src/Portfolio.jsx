@@ -5,7 +5,7 @@ const TEAL = "#7FBBAC";
 const SKILLS_PINK = "#D98BA8";
 const LIGHT_GRAY = "#EDEDED";
 
-const NAV_LINKS = ["Contact", "Previous Work"];
+const NAV_LINKS = ["About Me", "Contact", "Previous Work"];
 
 const skills = [
   { label: "Adobe Illustrator", level: 92 },
@@ -24,7 +24,7 @@ const projects = [
     name: "Plush - Pink Grapefruit",
     tag: "Packaging",
     bg: "#F9D5C5",
-    img: "src\assets\GrapefruitPlushPoster.png",
+    img: "src/assets/GrapefruitPlushPoster.png",
     desc: "",
   },
   {
@@ -32,7 +32,7 @@ const projects = [
     name: "Plush - Can Design",
     tag: "Packaging",
     bg: "#F7E8E0",
-    img: "src\assets\PlushCans.png",
+    img: "src/assets/PlushCans.png",
     desc: "",
   },
   {
@@ -40,7 +40,7 @@ const projects = [
     name: "Plush - Lemon",
     tag: "Packaging",
     bg: "#FBF2C0",
-    img: "src\assets\pinkPlushPoster.png",
+    img: "src/assets/pinkPlushPoster.png",
     desc: "",
   },
   {
@@ -48,7 +48,7 @@ const projects = [
     name: "Crackle Bar",
     tag: "Packaging",
     bg: "#E8F0D0",
-    img: "src\assets\CrackleBar.png",
+    img: "src/assets/CrackleBar.png",
     desc: "",
   },
 ];
@@ -72,7 +72,11 @@ function Navbar({ page, setPage }) {
       {NAV_LINKS.map((link) => (
         <button
           key={link}
-          onClick={() => setPage(link === "Previous Work" ? "work" : "contact")}
+        onClick={() => {
+  if (link === "Previous Work") setPage("work");
+  else if (link === "Contact") setPage("contact");
+  else setPage("about");
+}}
           style={{
             background: "none",
             border: "none",
@@ -86,7 +90,8 @@ function Navbar({ page, setPage }) {
             padding: "4px 0",
             borderBottom:
               (link === "Previous Work" && page === "work") ||
-              (link === "Contact" && page === "contact")
+              (link === "Contact" && page === "contact") ||
+              (link === "About Me" && page === "about")
                 ? "2px solid #1a1a1a"
                 : "2px solid transparent",
             transition: "border-color 0.2s",
@@ -435,7 +440,7 @@ export default function Portfolio() {
   return (
     <>
       <link
-        href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=DM+Sans:wght@400;500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Koulen&family=DM+Sans:wght@400;500&display=swap"
         rel="stylesheet"
       />
       <style>{`* { box-sizing: border-box; margin: 0; padding: 0; } body { background: #EDEDED; }`}</style>
