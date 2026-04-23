@@ -4,6 +4,7 @@ import { projects } from "../data/content";
 function CardGrid({ projectSlice, bg }) {
   return (
     <section className="px-4 py-8 md:px-18 md:py-12" style={{ background: bg }}>
+      <h2 className="text-2xl md:text-3xl font-semibold mb-6 tracking-tight text-white">{projectSlice.map((p) => p.tag).join("")}</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
         {projectSlice.map((p) => (
           <ProjectCard key={p.id} project={p} />
@@ -13,9 +14,10 @@ function CardGrid({ projectSlice, bg }) {
   );
 }
 
-function FeaturedCard({ project }) {
+function FeaturedCard({ project,bg }) {
   return (
-    <section className="bg-[#D98BA8] px-4 py-8 md:px-18 md:py-12">
+    <section className="px-4 py-8 md:px-18 md:py-12" style={{ background: bg }}>
+       <h2 className="text-2xl md:text-3xl font-semibold mb-6 tracking-tight text-white">{project.name}</h2>
       <div className="hidden md:grid grid-cols-[1fr_auto_1fr] items-center gap-10">
         <div className="space-y-4">
           {[0, 1, 2, 3].map((i) => (
@@ -39,15 +41,16 @@ function FeaturedCard({ project }) {
 export default function WorkPage() {
   return (
     <>
-      <div className="h-6 md:h-10 bg-[#EDEDED]" />
-      <CardGrid projectSlice={projects.slice(0, 3)} bg="#7FBBAC" />
+       <CardGrid projectSlice={projects.slice(4, 7)} bg="#d98ba8" />
       <div className="h-4 md:h-12 bg-[#EDEDED]" />
-      <FeaturedCard project={projects[3]} />
-      <div className="h-4 md:h-12 bg-[#EDEDED]" />
-      <CardGrid projectSlice={projects.slice(4, 7)} bg="#7FBBAC" />
-      <div className="h-4 md:h-12 bg-[#EDEDED]" />
-      <FeaturedCard project={projects[7]} />
+      <CardGrid projectSlice={projects.slice(7, 11)} bg="#7FBBAC" />
       <div className="h-20 bg-[#EDEDED]" />
+      <div className="h-6 md:h-10 bg-[#EDEDED]" />
+      <CardGrid projectSlice={projects.slice(0, 3)} bg="#d98ba8" />
+      <div className="h-4 md:h-12 bg-[#EDEDED]" />
+      <FeaturedCard project={projects[3]}  bg="#7FBBAC"/>
+      <div className="h-4 md:h-12 bg-[#EDEDED]" />
+     
     </>
   );
 }
