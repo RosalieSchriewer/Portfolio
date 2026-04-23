@@ -45,6 +45,8 @@ export default function WorkPage() {
       <FeaturedCard project={projects[3]} />
       <div className="h-4 md:h-12 bg-[#EDEDED]" />
       <CardGrid projectSlice={projects.slice(4, 7)} bg="#7FBBAC" />
+      <div className="h-4 md:h-12 bg-[#EDEDED]" />
+      <FeaturedCard project={projects[7]} />
       <div className="h-20 bg-[#EDEDED]" />
     </>
   );

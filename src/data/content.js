@@ -48,7 +48,7 @@ export const projects = [
     tag: "App Development",
     bg: "#d0e6f0",
     img: "src/assets/eyebrow_downwards.png",
-    desc: "",
+    desc: "3D avatar creator built with Blender, Node.js and Three.js. Wide range of customizable hair, face, clothing and accessory options.",
   },
   {
     id: 6,
@@ -64,6 +64,14 @@ export const projects = [
     tag: "App Development",
     bg: "#d0e6f0",
     img: "src/assets/sunglasses_oval.png",
-    desc: "",
+    desc: "3D avatar creator built with Blender, Node.js and Three.js. Wide range of customizable hair, face, clothing and accessory options.",
   },
+  {
+  id: 8,
+  name: "IKT Project - Alienvasion",
+  tag: "Video",
+  bg: "#e8e0f0",
+  video: "src/assets/Alienvasion.mp4",
+  desc: "My very first attempt at creating a video game! Made in Unity for a school project, I drew all the assets, created the animations and coded the game mechanics. The goal is to survive as long as possible against waves of alien invaders.",
+},
 ];
