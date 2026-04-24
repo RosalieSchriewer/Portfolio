@@ -3,9 +3,9 @@ import { projects } from "../data/content";
 
 function CardGrid({ projectSlice, bg }) {
   return (
-    <section className="px-4 md:px-18 md:py-20" style={{ background: bg }}>
-      <h2 className="text-2xl text-center md:text-3xl font-koulen uppercase tracking-widest mb-6 tracking-tight text-white">{projectSlice.map((p) => p.tag).join("")}</h2>
-     <p className="font-sans text-center text-white leading-relaxed mb-6">{projectSlice.map((p) => p.subheading)}</p>
+    <section className="px-4 py-12 md:px-18 md:py-20" style={{ background: bg }}>
+      <h2 className="text-2xl text-center md:text-3xl font-koulen uppercase tracking-widest mb-6 tracking-tight text-[#1a1a1a]">{projectSlice.map((p) => p.tag).join("")}</h2>
+     <p className="font-sans text-center text-[#1a1a1a] leading-relaxed mb-6">{projectSlice.map((p) => p.subheading)}</p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
         {projectSlice.map((p) => (
           <ProjectCard key={p.id} project={p} />
@@ -18,8 +18,8 @@ function CardGrid({ projectSlice, bg }) {
 function FeaturedCard({ project,bg }) {
   return (
     <section className="px-4 py-12 md:py-20" style={{ background: bg }}>
-       <h2 className="text-2xl text-center md:text-3xl font-koulen uppercase tracking-widest mb-6 tracking-tight text-white">{project.name}</h2>
-        <p className="font-sans text-center text-white leading-relaxed mb-6">{project.subheading}</p>
+       <h2 className="text-2xl text-center md:text-3xl font-koulen uppercase tracking-widest mb-6 tracking-tight text-[#1a1a1a]">{project.name}</h2>
+        <p className="font-sans text-center text-[#1a1a1a] leading-relaxed mb-6">{project.subheading}</p>
       <div className="hidden md:grid grid-cols-[1fr_auto_1fr] items-center gap-10">
         <div className="space-y-4">
           {[0, 1, 2, 3].map((i) => (
