@@ -16,21 +16,17 @@ export default function ProjectCard({ project, center = false }) {
         `}
       >
         <div className="h-40 overflow-hidden" style={{ background: project.bg }}>
-          {project.video ? (
-            <video
-              src={project.video}
-              className="w-full h-full object-cover"
-              muted
-              loop
-              autoPlay
-            />
-          ) : (
-            <img
-              src={project.img}
-              alt={project.name}
-              className="w-full h-full object-contain p-4"
-            />
-          )}
+          {project.youtube ? (
+  <img
+    src={`https://img.youtube.com/vi/${project.youtube}/hqdefault.jpg`}
+    alt={project.name}
+    className="w-full h-full object-cover"
+  />
+) : project.video ? (
+  <video src={project.video} className="w-full h-full object-cover" muted loop autoPlay />
+) : (
+  <img src={project.img} alt={project.name} className="w-full h-full object-contain p-4" />
+)}
         </div>
       </div>
 
@@ -50,19 +46,17 @@ export default function ProjectCard({ project, center = false }) {
               >
                 ×
               </button>
-              {project.video ? (
-                <video
-                  src={project.video}
-                  controls
-                  className="w-full h-full object-contain"
-                />
-              ) : (
-                <img
-                  src={project.img}
-                  alt={project.name}
-                  className="w-full h-full object-contain p-8"
-                />
-              )}
+             {project.youtube ? (
+  <iframe
+    src={`https://www.youtube.com/embed/${project.youtube}`}
+    className="w-full h-full"
+    allowFullScreen
+  />
+) : project.video ? (
+  <video src={project.video} controls className="w-full h-full object-contain" />
+) : (
+  <img src={project.img} alt={project.name} className="w-full h-full object-contain p-8" />
+)}
             </div>
 
             <div className="p-6">
