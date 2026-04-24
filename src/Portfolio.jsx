@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import AboutPage from "./pages/AboutPage";
 import WorkPage from "./pages/WorkPage";
 import ContactPage from "./pages/ContactPage";
+import { Analytics } from "@vercel/analytics/next";
 
 export default function Portfolio() {
   const [page, setPage] = useState("about");
