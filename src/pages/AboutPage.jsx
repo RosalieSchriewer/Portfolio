@@ -5,7 +5,7 @@ export default function AboutPage() {
     <>
       <section className="bg-[#7FBBAC] px-6 py-10 md:px-18 md:py-14 grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] items-center gap-6 md:gap-10 text-center">
         <div className="h-[140px] w-[140px] md:h-[180px] md:w-[180px] rounded-full bg-[#c8d6cc] overflow-hidden flex items-center justify-center text-6xl mx-auto order-0 md:order-1">
-          <img src="src/assets/profilepicture.jpg" alt="An image of Rosalie" className="w-full h-full object-cover" />
+          <img src="../assets/profilepicture.jpg" alt="An image of Rosalie" className="w-full h-full object-cover" />
         </div>
         <h1 className="font-koulen uppercase tracking-widest text-[#1a1a1a] text-3xl md:text-4xl order-1 md:order-0 md:text-left">
           Rosalie

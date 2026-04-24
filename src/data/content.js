@@ -20,7 +20,7 @@ export const projects = [
     tag: "Packaging",
     subheading: "Mock ups for a fictional soda brand",
     bg: "#F9D5C5",
-    img: "src/assets/GrapefruitPlushPoster.png",
+    img: "../assets/GrapefruitPlushPoster.png",
     desc: "Plush Soda Co. is a fictional soda brand I created for a packaging design project. The brand is inspired by the nostalgic and playful aesthetic of vintage soda packaging, with a modern twist.",
   },
   {
@@ -28,7 +28,7 @@ export const projects = [
     name: "Plush - Can Design",
     tag: "",
     bg: "#F7E8E0",
-    img: "src/assets/PlushCans.png",
+    img: "../assets/PlushCans.png",
     desc: "Plush Soda Co. is a fictional soda brand I created for a packaging design project. The brand is inspired by the nostalgic and playful aesthetic of vintage soda packaging, with a modern twist.",
   },
   {
@@ -36,7 +36,7 @@ export const projects = [
     name: "Plush - Lemon",
     tag: "",
     bg: "#F9D5C5",
-    img: "src/assets/pinkPlushPoster.png",
+    img: "../assets/pinkPlushPoster.png",
     desc: "Plush Soda Co. is a fictional soda brand I created for a packaging design project. The brand is inspired by the nostalgic and playful aesthetic of vintage soda packaging, with a modern twist.",
   },
   {
@@ -45,7 +45,7 @@ export const projects = [
     tag: "Packaging",
     subheading: "Mock up for a fictional chocolate bar brand",
     bg: "#E8F0D0",
-    img: "src/assets/CrackleBar.png",
+    img: "../assets/CrackleBar.png",
     desc: "Crackle Bar is a fictional chocolate bar brand I created for a packaging design project.",
   },
   {
@@ -54,7 +54,7 @@ export const projects = [
     github: "https://github.com/RosalieSchriewer/avatarStudioKode",
     tag: "",
     bg: "#F9D5C5",
-    img: "src/assets/eyebrow_downwards.png",
+    img: "../assets/eyebrow_downwards.png",
     desc: "3D avatar creator built with Blender, Node.js and Three.js. Wide range of customizable hair, face, clothing and accessory options.",
   },
   {
@@ -64,7 +64,7 @@ export const projects = [
     subheading: "3D avatar creator built with Blender, Node.js and Three.js",
     github: "https://github.com/RosalieSchriewer/avatarStudioKode",
     bg: "#F7E8E0",
-    img: "src/assets/hair_short_wavy.png",
+    img: "../assets/hair_short_wavy.png",
     desc: "3D avatar creator built with Blender, Node.js and Three.js. Wide range of customizable hair, face, clothing and accessory options.",
   },
   {
@@ -73,7 +73,7 @@ export const projects = [
     github: "https://github.com/RosalieSchriewer/avatarStudioKode",
     tag: "",
     bg: "#F9D5C5",
-    img: "src/assets/sunglasses_oval.png",
+    img: "../assets/sunglasses_oval.png",
     desc: "3D avatar creator built with Blender, Node.js and Three.js. Wide range of customizable hair, face, clothing and accessory options.",
   },
 {
@@ -92,7 +92,7 @@ export const projects = [
     github: "",
     tag: "",
     bg: "#e8e0f0",
-    img: "src/assets/inGameInteraction.png",
+    img: "../assets/inGameInteraction.png",
     desc:"A 3D game created in Unity for a school project. I designed and modeled the assets in Blender, created the animations and coded the game mechanics. The game is a short third-person experience where you explore a small island and interact with various objects.",
   },
    {
@@ -101,7 +101,7 @@ export const projects = [
       github: "",
     tag: "",
     bg: "#d0e6f0",
-    img: "src/assets/AppleFactoryGame.png",
+    img: "../assets/AppleFactoryGame.png",
     desc: "A virtual reality game where players sort apples in a factory. Assets are created in Blender and the game is developed with Unity using the MetaSDK.",
   },
 ];
