@@ -51,6 +51,7 @@ export const projects = [
   {
     id: 5,
     name: "Avatar Creator",
+    github: "https://github.com/RosalieSchriewer/avatarStudioKode",
     tag: "",
     bg: "#F9D5C5",
     img: "src/assets/eyebrow_downwards.png",
@@ -61,6 +62,7 @@ export const projects = [
     name: "Avatar Creator",
     tag: "App Development",
     subheading: "3D avatar creator built with Blender, Node.js and Three.js",
+    github: "https://github.com/RosalieSchriewer/avatarStudioKode",
     bg: "#F7E8E0",
     img: "src/assets/hair_short_wavy.png",
     desc: "3D avatar creator built with Blender, Node.js and Three.js. Wide range of customizable hair, face, clothing and accessory options.",
@@ -68,6 +70,7 @@ export const projects = [
   {
     id: 7,
     name: "Avatar Creator",
+    github: "https://github.com/RosalieSchriewer/avatarStudioKode",
     tag: "",
     bg: "#F9D5C5",
     img: "src/assets/sunglasses_oval.png",
@@ -77,6 +80,7 @@ export const projects = [
   id: 8,
   name: "IKT Project - Alienvasion",
   subheading: "Games created in Unity",
+  github: "",
   tag: "Game Development",
   bg: "#e8e0f0",
   video: "src/assets/Alienvasion.mp4",
@@ -85,6 +89,7 @@ export const projects = [
   {
   id: 9,
     name: "3D Visualisation project",
+    github: "",
     tag: "",
     bg: "#e8e0f0",
     img: "src/assets/inGameInteraction.png",
@@ -93,6 +98,7 @@ export const projects = [
    {
     id: 10,
     name: "VR Game - Apple Sorting Factory",
+      github: "",
     tag: "",
     bg: "#d0e6f0",
     img: "src/assets/AppleFactoryGame.png",

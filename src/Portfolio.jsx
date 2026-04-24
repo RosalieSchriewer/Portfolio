@@ -22,6 +22,22 @@ export default function Portfolio() {
         </main>
         <footer className="text-center py-6 text-xs text-gray-400 bg-[#EDEDED]">
           © 2026 Rosalie · All rights reserved
+          <a
+            href="https://github.com/RosalieSchriewer"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:underline ml-2"
+          >
+                GitHub
+          </a>
+            <a
+              href="https://www.linkedin.com/in/rosalie-schriewer/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:underline ml-2"
+            >
+              LinkedIn
+            </a>
         </footer>
       </div>
     </>

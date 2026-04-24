@@ -3,7 +3,7 @@ import { projects } from "../data/content";
 
 function CardGrid({ projectSlice, bg }) {
   return (
-    <section className="px-4 py-12 md:px-18 md:py-20" style={{ background: bg }}>
+    <section className="px-4 md:px-18 md:py-20" style={{ background: bg }}>
       <h2 className="text-2xl text-center md:text-3xl font-koulen uppercase tracking-widest mb-6 tracking-tight text-white">{projectSlice.map((p) => p.tag).join("")}</h2>
      <p className="font-sans text-center text-white leading-relaxed mb-6">{projectSlice.map((p) => p.subheading)}</p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
@@ -43,7 +43,6 @@ function FeaturedCard({ project,bg }) {
 export default function WorkPage() {
   return (
     <>
-    <div className="h-8 md:h-16 bg-[#EDEDED]" />
        <CardGrid projectSlice={projects.slice(4, 7)} bg="#d98ba8" />
       <div className="h-8 md:h-16 bg-[#EDEDED]" />
       <CardGrid projectSlice={projects.slice(7, 11)} bg="#7FBBAC" />
