@@ -9,10 +9,10 @@ export default function ContactPage() {
         and I'll get back to you as soon as possible.
       </p>
       <a
-        href="mailto:rosalie.schriewer@icloud.com"
+        href="mailto:yearly.sprawl-6o@icloud.com"
         className="bg-[#F2B4C8] rounded-full px-9 py-3 font-koulen uppercase tracking-widest text-sm text-[#1a1a1a] no-underline hover:opacity-80 transition-opacity"
       >
-        rosalie.schriewer@icloud.com
+       Email me!
       </a>
       <a className="bg-[#F2B4C8] rounded-full px-9 py-3 font-koulen uppercase tracking-widest text-sm text-[#1a1a1a] no-underline hover:opacity-80 transition-opacity"
         href="https://www.linkedin.com/in/rosalie-schriewer/"
