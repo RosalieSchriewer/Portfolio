@@ -51,7 +51,30 @@ export default function WorkPage() {
       <div className="h-8 md:h-16 bg-[#EDEDED]" />
       <FeaturedCard project={projects[3]}  bg="#7FBBAC"/>
       <div className="h-8 md:h-16 bg-[#EDEDED]" />
-     
+     <div className="h-8 md:h-16 bg-[#EDEDED]" />
+
+<section className="px-4 py-12 md:px-18 md:py-20 bg-[#EDEDED]">
+  <div className="max-w-3xl mx-auto text-center">
+    <h2 className="text-2xl md:text-3xl font-koulen uppercase tracking-tight text-[#1a1a1a] mb-4">
+      Unity Assets
+    </h2>
+
+    <p className="font-sans text-[#1a1a1a] leading-relaxed mb-6">
+      I also create and publish assets for the Unity Asset Store.
+      <br />
+      You can browse my creator profile to see current releases and upcoming work.
+    </p>
+
+    <a
+      href="https://assetstore.unity.com/publishers/148108"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block px-6 py-3 rounded-full bg-[#1a1a1a] text-white font-medium transition hover:opacity-80"
+    >
+      View Unity Asset Store Profile
+    </a>
+  </div>
+</section>
     </>
   );
 }
